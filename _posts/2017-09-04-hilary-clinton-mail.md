@@ -13,7 +13,7 @@ The data consists of Hilary Clinton's mails published during her campaign in the
 
 It's really quick to have a wordcloud running. However, data preprocessing makes a big difference as it will be visualized.
 
-{% highlight ruby %}
+{% highlight python %}
 from wordcloud import WordCloud # pip install wordcloud
 
 # set max words to 200 to simplify visualization
@@ -42,7 +42,7 @@ Preprocessing is composed of the following steps:
 
 The token returned are now ready for visualization and NLP.
 
-{% highlight ruby %}
+{% highlight python %}
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.stem.snowball import EnglishStemmer
@@ -83,7 +83,7 @@ So let's do wordcloud again with the same set-up. Now it looks way better since 
 
 The second purpose of this study is to perform sentiment analysis, grouped by country, over the mails. `pycountry` can be used to detect country names in the mails. After tagging each mail with country names, sentiment analysis can be performed as follows.
 
-{% highlight ruby %}
+{% highlight python %}
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 # use compound value for polarity aggregation
@@ -116,7 +116,7 @@ The topic modeling part is reinforced by gensim and Latent Dirichlet Allocation(
 - Use gensim to generate topics with most relevant keywords.
 - Remove meaningless stopwords and run TM again, on an iterative basis.
 
-{% highlight ruby %}
+{% highlight python %}
 from gensim import corpora, models, similarities
 
 # make and save dictionary
@@ -163,6 +163,6 @@ The `iter_corpus` is the corpus generated at previous step but will be updated u
 ```
 Super! We can see some cool topics like number 2. It's easy to identify the topic as Israel-Palestine conflict issues. Topic number 8 looks cool as well.
 
-## Source code
+## Credits
 
-This work is part of the EPFL Applied Data Analysis Project. The source code is served at [Github](https://github.com/Jiaxigu/ADAhomework/tree/master/03%20-%20Interactive%20Viz). 
+This work is part of my EPFL Applied Data Analysis Homework. The source code is served at [Github](https://github.com/Jiaxigu/ADAhomework/tree/master/03%20-%20Interactive%20Viz). 

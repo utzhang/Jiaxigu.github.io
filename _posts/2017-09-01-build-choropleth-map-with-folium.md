@@ -9,7 +9,7 @@ In this work I made a choropleth map with [Folium](https://github.com/python-vis
 
 This project serves to visualize how much [grant money](https://en.wikipedia.org/wiki/Grant_(money)) goes to each Swiss canton for research purposes in the past 30 years. 
 
-*Folium* makes a good option here since it's pretty lightweight and involves *leaflet.js* maps.
+Folium makes a good option here since it's pretty lightweight and involves leaflet.js maps.
 
 ## Deliverables
 
@@ -34,7 +34,7 @@ With ```googleplaces``` you can query with a place's name, in the form of a stri
 The code snippet is as follows.
 
 
-{% highlight ruby %}
+{% highlight python %}
 uni = 'Universität Bern - BE'
 
 from googleplaces import GooglePlaces, types, lang
@@ -53,7 +53,7 @@ If you try to print ```place``` it returns
 
 Now with some easy look-up in the documentation we are in full possession of well structured data.
 
-{% highlight ruby %}
+{% highlight python %}
 place.get_details()
 details = place.details
 for component in details['address_components']:
@@ -69,11 +69,11 @@ If we print ```canton```it returns
 
 ## Visualization with Folium
 
-Once the dataset ```df``` is done it's really easy to implement *Folium*. You need to create a folium map object in the first place. Specifying tiles, zoom level and starting position properly will save a lot of time for you.
+Once the dataset ```df``` is done it's really easy to implement Folium. You need to create a folium map object in the first place. Specifying tiles, zoom level and starting position properly will save a lot of time for you.
 
-Then we need an object containing topology information, mostly in the form of JSON to 1)convey the data from ```df``` and 2)overlap with the folium map. 
+Then we need an object containing topology information, mostly in the form of JSON to 1) convey the data from ```df``` and 2) overlap with the folium map. 
 
-{% highlight ruby %}
+{% highlight python %}
 topo_path = r'ch-cantons.topojson.json' # local topojson file
 scale = np.linspace(0, np.max(countDF.Grant), 6)
 
@@ -94,9 +94,9 @@ Well, but it's still a cool library with style, isn't it:)
 
 ![aaa](https://camo.githubusercontent.com/9533b0f09c915642b4d16de10bbe7587559af81f/687474703a2f2f6661726d392e737461746963666c69636b722e636f6d2f383238302f383735353933383339345f396634393165663739665f632e6a7067)
 
-## Source code
+## Credits
 
-This work is part of the EPFL Applied Data Analysis Project. It enjoys colossal contribution from my teammate Carlos Malanche.
+This work is part of my EPFL Applied Data Analysis Homework. It enjoys colossal contribution from my teammate Carlos Malanche.
 
 The source code is served at [Github](https://github.com/Jiaxigu/ADAhomework/tree/master/03%20-%20Interactive%20Viz). 
 

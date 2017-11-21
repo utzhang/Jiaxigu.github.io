@@ -3,6 +3,10 @@ layout: post
 title: Premier League Power Rankings
 ---
 
+
+
+The Premier League has been the most entertaining football league in the last decade. Darkhorses, derbies, upsets, busts and **at least four** title contenders make it a great show every single season. I continued my research on the European football dataset to check out who comes atop at Premier League in the golden era.
+
 > I am the happy one.
 > -- *José Mourinho, 2013 with Chelsea*
 
@@ -10,16 +14,12 @@ title: Premier League Power Rankings
 > -- *Jurgen Klopp, 2015 with Liverpool*
 
 
-The Premier League has been the most entertaining football league in the last decade. Darkhorses, derbies, upsets, busts and **at least four** title contenders make it a great show every single season. I continued my research on the European football dataset to check out who comes atop at Premier League in the golden era.
-
-<!-- more -->
-
 ## Why Premier League is the best
 
 
-When I made this post: [How Crazy is 15/16 Leicester City?](https://jiaxigu.github.io/visualization/2017/08/23/how-crazy-is-leicester-city/) I was impressed by the fact that no Premier League teams could enjoy a season expecation over 85 points. There isn't such a team in Italy as well, but Serie A is plagued with match-fixing scandals and bookers tend to be very cautious with them.
+When I made this post: [How Crazy is 15/16 Leicester City?](https://jiaxigu.github.io/visualization/2017/08/23/how-crazy-is-leicester-city/) I was impressed by the fact that **no** Premier League teams could enjoy a season expecation over 85 points. There isn't such a team in Italy as well, but Serie A is plagued with match-fixing scandals so bookers tend to be very cautious with them.
 
-![Plot1](https://raw.githubusercontent.com/Jiaxigu/eu-football-analysis/master/plots/league-dist.png)
+![Plot1](https://raw.githubusercontent.com/Jiaxigu/eu-football-analysis/master/plots/league-dist.png){: .center-image}
 
 
 ### Survivors
@@ -38,21 +38,21 @@ But in England, there isn't a single team that could dominate year in, year out.
 
 ## Who has the highest expecations?
 
-![Plot2](https://raw.githubusercontent.com/Jiaxigu/eu-football-analysis/master/plots/pl-exp.png)
+![Plot2](https://raw.githubusercontent.com/Jiaxigu/eu-football-analysis/master/plots/pl-exp.png){: .center-image}
 
 As we can see most of the top teams went through ups and downs but Arsène Wenger's _Gunners_ remains stable (at 4th place mostly). Manchester City had a power spike. Liverpool did the worst among the *ol'tyme goods* in the last decade, which is probably one of the darkest era in the club's history.
 
-The middle class teams are absent in the Premier League. Tottenham is catching up with the best teams, leaving only Everton and Southampton who could consistently have plus-50 points expectations but absolutely zero hope for the title.
+The middle class teams are absent in the Premier League. Tottenham is catching up with the best teams, leaving only Everton and Southampton having forever plus-50 points expectations but absolutely zero hopes running for the title.
 
 ## Performance in a glance
 
-![Plot3](https://raw.githubusercontent.com/Jiaxigu/eu-football-analysis/master/plots/pl-real.png)
+![Plot3](https://raw.githubusercontent.com/Jiaxigu/eu-football-analysis/master/plots/pl-real.png){: .center-image}
 
-Talking about zero hope for the title, Leicester won it all with only 81 points. It's a bit unfortunate for Tottenham, as Mauricio Pochettino's side reached prime last season and collected 86 points, but without any trophies.
+Talking about zero hopes for the title, Leicester won it all with only 81 points. It's a bit unfortunate for Tottenham, as Mauricio Pochettino's side reached prime last season and collected 86 points, but without any trophies.
 
 In general, Manchester United did the best thanks to Sir Alex Ferguson. He led his not-the-most-talented team to numerous hard-fought championships.
 
-On the other side of the league, Aston Villa's 17 points season was a nightmare. Blackpool was unlucky though, they squeezed 39 points with a really bad team but was eventually 1 point shy to stay in the top flight.
+On the other side of the league, Aston Villa's 17 points season was a nightmare. Blackpool was unlucky though, they squeezed 39 points out with a low-budget team but was eventually 1 point shy to stay in the top flight.
 
 ## Notes about seaborn
 
@@ -60,22 +60,19 @@ I did the analysis simply to try out `violinplot` and `boxplot` with seaborn, an
 
 `violinplot` is more of a predictive plot. It comes with integrated KDE fitting and require a sufficient number of data points to be efficient. 
 
-```
+{% highlight python %}
 sns.violinplot(x='exp', y='nm', data=epl_df, inner='stick', scale='width')
-```
+{% endhighlight %}
 
 On the other hand `boxplot` is less predictive, but reflects well the dataset. The grids on the box are lower quartile, median, and upper quartile respectively. The whiskers are the extreme points within 1.5 IQR of lower and upper quartile. Isolated points are out of the 1.5 IQR range. Combined with `swarmplot`, you could have a good read on overall and individual characteristics of the dataset.
 
-```
+{% highlight python %}
 sns.boxplot(x='real', y='nm', data=epl_df)
 sns.swarmplot(x='real', y='nm', data=epl_df, color='.25')
-```
-
-## Source code
-
-This project is hosted on [GitHub](https://github.com/Jiaxigu/eu-football-analysis), and is to be continued.
-
+{% endhighlight %}
 
 ## Reference
 
-[The database](https://www.kaggle.com/hugomathien/soccer) by Hugo Mathien
+This project is hosted on [GitHub](https://github.com/Jiaxigu/eu-football-analysis), and is to be continued.
+
+[Database](https://www.kaggle.com/hugomathien/soccer) by Hugo Mathien
