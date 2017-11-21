@@ -2,10 +2,10 @@
 permalink:      /:year-:month-:day/:title
 
 # Setup
-title:          Tale
+title:          Bodel
 paginate:       5
-baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+baseurl:        "/"
+url:            "https://jiaxigu.github.io"
 
 # Assets
 sass:
@@ -17,9 +17,9 @@ markdown:       kramdown
 
 # About
 author:
-  name:         Chester How
-  url:          http://chester.how
-  email:        chesterhow@gmail.com
+  name:         Jiaxi Gu
+  url:          github.com/jiaxigu
+  email:        mcjxgu@163.com
 
 # Custom vars
 version:        3.4.1
