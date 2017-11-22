@@ -4,7 +4,7 @@ permalink:      /:year-:month-:day/:title
 # Setup
 title:          Bodel
 paginate:       5
-baseurl:        "/tale"
+baseurl:        ""
 url:            "https://jiaxigu.github.io"
 
 # Assets
@@ -24,7 +24,7 @@ author:
 # Custom vars
 version:        3.4.1
 github:
-  repo:         https://github.com/chesterhow/tale
+  repo:         https://github.com/Jiaxigu/Jiaxigu.github.io
 
 # Gems
 gems:

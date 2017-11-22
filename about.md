@@ -20,7 +20,7 @@ I'm **Jiaxi Gu**, a master student at **École polytechnique fédérale de Lausa
 []() <!--as blank line-->
 
 - **Zhejiang University \| 2011 - 2015**
-	+ Bachelor in Energy Engineering, GPA 85.3/100
+	+ Bachelor in Energy Engineering
 
 
 ## Experience
@@ -29,7 +29,7 @@ I'm **Jiaxi Gu**, a master student at **École polytechnique fédérale de Lausa
 	+ Member of TalkingData × 2017 Beijing International Design Week Project
 	+ Backend of design platform(haskell)
 	+ Database(sqlite) and host server
-	+ Data mining and analysis
+	+ Data analysis and visualization(python)
 
 []() 
 
@@ -51,20 +51,20 @@ I'm **Jiaxi Gu**, a master student at **École polytechnique fédérale de Lausa
 	
 []()
 
-- **Topic Modeling of Venetian Ambassador's Report \| EPFL DH101 Project \| 2016**
+- **Topic Modeling of Venetian Ambassador's Report \| EPFL DH101 Project \| 2015 - 2016**
 	+ Stylometry, topic modeling and wordnet visualization(R+mallet)
 	
 []()
 
-- **Android Game 'Labyrinth' Development \| 2016**
+- **Android Game 'Labyrinth' \| 2016**
 	+ Highscore features and Django server(java+django+RESTful)
 
 
 ## Honors
 - **3rd Prize, 6th national students’ contest of energy saving and emission reduction \| 2013**
 	+ Propose and design an energy-saving font
-- **Scholarship for Outstanding Merits (Top 15%) \| Zhejiang University \| 2012**
-- **Scholarship for Outstanding Students (Top 15%) \| Zhejiang University \| 2012**
+- **Scholarship for Outstanding Merits \| Zhejiang University \| 2012**
+- **Scholarship for Outstanding Students \| Zhejiang University \| 2012**
 
 ## Expertises
 
