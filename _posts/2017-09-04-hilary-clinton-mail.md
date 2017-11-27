@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hilary Clinton Mails Deciphered
+tags: NLP
 ---
 
 In this work I performed wordcloud visualization, sentiment analysis and topic modeling on the much anticipated [database of Hilary Clinton's leaked mails](https://www.kaggle.com/kaggle/hillary-clinton-emails).

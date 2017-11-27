@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="post">
+  {% unless page.standalone %}
   <div class="post-info">
     <span>Written by</span>
     {% if page.author %}
@@ -16,9 +17,12 @@ layout: default
       <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
     {% endif %}
   </div>
+  {% endunless %}
 
   <h1 class="post-title">{{ page.title }}</h1>
+  {% unless page.standalone %}
   <div class="post-line"></div>
+  {% endunless %}
 
   {{ content }}
 

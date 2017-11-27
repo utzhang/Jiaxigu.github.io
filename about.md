@@ -1,9 +1,17 @@
 ---
 layout: post
+title: About
 permalink: /about/
+standalone: true
 ---
 
 ## Welcome!
+
+It's a blog about data analysis and visualization, mainly with python.
+
+Data science and sports could be a sweet mix. If you enjoy both, we would have a nice chat. The statement stands at a confidence level of 95% - The other 5% being you are a supporter of Real Madrid.
+
+## Me
 
 I'm **Jiaxi Gu**, a master student at **École polytechnique fédérale de Lausanne**, Switzerland. 
 
@@ -27,7 +35,7 @@ I'm **Jiaxi Gu**, a master student at **École polytechnique fédérale de Lausa
 
 - **Data Scientist \| TalkingData, Beijing, China \| 2017 - present**
 	+ Member of TalkingData × 2017 Beijing International Design Week Project
-	+ Backend of design platform(haskell)
+	+ Platform backend(haskell)
 	+ Database(sqlite) and host server
 	+ Data analysis and visualization(python)
 
@@ -39,14 +47,14 @@ I'm **Jiaxi Gu**, a master student at **École polytechnique fédérale de Lausa
 ## Projects
 
 - **Identifying Higgs Boson \| EPFL Machine Learning Project \| 2016** 
-	+ Apply manually multiple ML models(without scikit-learn)
-	+ Apply feature engineering, outlier detection and cross validation
+	+ Implement manually multiple ML models(without scikit-learn)
+	+ Feature engineering, outlier detection and cross validation
 	+ Top 15% Result
 
 []() 
 
 - **Recommender System for Movies \| EPFL Machine Learning Project \| 2016**
-	+ Apply multiple ML models(scikit-learn)
+	+ Implement multiple ML models(scikit-learn)
 	+ Top 25% Result
 	
 []()
