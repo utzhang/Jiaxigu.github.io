@@ -8,7 +8,7 @@ So today I came across a situation where I need to use **ternary conditional ope
 
 ## List Comprehensions
 
-List comprehensions provide a concise way to create lists in python. Instead of a `for`  loop, we can write just one line of neat code like this:
+List comprehensions provide a concise way to create lists in python. Instead of a `for`  loop, we can write simply one line of code like this:
 
 {% highlight python %}
 l = [-1, 2, 3, 5, 10]
@@ -36,7 +36,7 @@ Then we get:
 a = [3, 5, 10]
 {% endhighlight %}
 
-`if` here is a **iterator filter**. This is cool. But the problem is: what if you want to keep elements that are larger than 2, **and**, for example, multiply the other elements by 2 and make a new list?
+`if` here is an **iterator filter**. This is cool. But the problem is: what if you want to keep elements that are larger than 2, **and**, for example, multiply the other elements by 2 and make a new list?
 
 ## Ternary conditional operator
 
@@ -72,7 +72,7 @@ c = [9, 4, 3, 5, 10]
 
 ## Why position matters
 
-As you may notice, when we use only the `if` statement, it's positoned after the `for`-`in` iterator. It's because the **iterator filter** `if` can be only used on iterators or iteration generators, which is a list here. But a **ternary conditional operator** can't be used on iterators since an iterator can't be evaluated.
+As you may notice, when we use only the `if` statement, it's positioned after the `for`-`in` iterator. It's because the **iterator filter** `if` can be only used on iterators or iteration generators, which is a list here. But a **ternary conditional operator** can't be used on iterators since an iterator can't be evaluated.
 
 ## Performance
 
