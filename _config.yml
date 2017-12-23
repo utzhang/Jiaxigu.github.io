@@ -2,10 +2,10 @@
 permalink:      /:year-:month-:day/:title
 
 # Setup
-title:          Bodel
+title:          utZhang
 paginate:       5
 baseurl:        ""
-url:            "https://jiaxigu.github.io"
+url:            "https://utzhang.github.io"
 
 # Assets
 sass:
@@ -17,14 +17,14 @@ markdown:       kramdown
 
 # About
 author:
-  name:         Jiaxi Gu
-  url:          github.com/jiaxigu
-  email:        mcjxgu@163.com
+  name:         utZhang
+  url:          github.com/utzhang
+  email:        utzhang@qq.com
 
 # Custom vars
 version:        3.4.1
 github:
-  repo:         https://github.com/Jiaxigu/Jiaxigu.github.io
+  repo:         https://github.com/utzhang/utzhang.github.io
 
 # Gems
 gems:
